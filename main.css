@@ -1,3 +1,17 @@
 button span.navbar-toggler-icon {
     color: #fff;
 }
+
+.container-fluid {
+    padding: 0;
+}
+a.navbar-brand {
+    margin-left: 10px;
+}
+div.p-5.mb-4.rounded-3 {
+    text-align: center;
+}
+
+div.p-5.mb-4.rounded-3 div.container-fluid.py-5 p.col-md-8.fs-4 {
+    margin: auto;
+}
