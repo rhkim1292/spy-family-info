@@ -5,13 +5,108 @@ button span.navbar-toggler-icon {
 .container-fluid {
     padding: 0;
 }
-a.navbar-brand {
-    margin-left: 10px;
+
+div.container-fluid nav.navbar.navbar-dark.navbar-expand-lg {
+    padding-left: 10px;
+    padding-right: 10px;
 }
-div.p-5.mb-4.rounded-3 {
+
+div.container-fluid.py-5 {
     text-align: center;
 }
 
-div.p-5.mb-4.rounded-3 div.container-fluid.py-5 p.col-md-8.fs-4 {
+div.container-fluid.py-5 p.text-responsive {
     margin: auto;
+}
+
+.row {
+    padding: 0px;
+}
+.sectionLight {
+    background-color: #eceeef;
+    padding: 2em;
+    padding-top: 0px;
+}
+
+div.sectionLight div.row div.col-sm-12 {
+    margin: auto;
+}
+
+div.carousel-inner {
+    border-radius: 15px;
+}
+
+.carousel-caption {
+    top: 3%;
+    bottom: auto;
+    right: 10%;
+    left: auto;
+    text-align: center;
+    width: 50%;
+    color: #eceeef;
+}
+
+@media (max-width: 992px) {
+    .carousel-caption {
+        top: 20%;
+    }
+}
+
+@media (max-width: 710px) {
+    .carousel-caption {
+        top: 1%;
+        padding-top: .75rem;
+    }
+}
+
+@media (max-width: 595px) {
+    div.sectionLight div.row div.col-sm-12 div.container-fluid.py-5 h1 {
+        font-size: calc(1.23rem + 2.1vw)
+    }
+}
+
+
+
+@media (min-width: 0px) {
+    .text-responsive {
+        font-size: 1.12rem;
+        width: 100%;
+        margin: auto;
+    }
+
+    div.sectionLight div.row div.col-sm-12 div.container-fluid.py-5 h1 {
+        font-size: calc(1.15rem + 2.1vw)
+    }
+}
+
+@media (min-width: 522px) {
+    div.sectionLight div.row div.col-sm-12 div.container-fluid.py-5 h1 {
+        font-size: calc(1.23rem + 2.1vw)
+    }
+}
+
+@media (min-width: 544px) {
+    .text-responsive {
+        font-size: 1.25rem;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 595px) {
+    div.sectionLight div.row div.col-sm-12 div.container-fluid.py-5 h1 {
+        font-size: calc(1.45rem + 2.1vw)
+    }
+}
+
+@media (min-width: 1112px) {
+    .carousel-caption {
+        top: 10%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .carousel-caption {
+        top: 20%;
+    }
 }
