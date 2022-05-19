@@ -103,7 +103,9 @@
                 <div class="col-sm-9 col-md-6">
                     <div class="row">
                         <div class="col-sm-12">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            <p class="vertical-center sectionDarkPText">&emsp;&emsp;Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -113,7 +115,9 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-9 col-md-9">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            <p class="vertical-center sectionDarkPText">&emsp;&emsp;Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -130,11 +134,37 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="learnMoreWrapper">
-                        <button type="button" class="btn btn-lg learnMoreBtn">Learn More</button>
+                        <button type="button" class="btn btn-lg learnMoreBtn" data-bs-toggle="modal"
+                            data-bs-target="#learnMoreModal">Learn More</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Learn More Modal -->
+        <div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contentLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="img-fluid" src="assets/spyfamilylogo.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Popper JS, then Bootstrap JS -->

@@ -2,6 +2,10 @@ button span.navbar-toggler-icon {
     color: #fff;
 }
 
+p {
+    
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -57,7 +61,7 @@ div.carousel-inner {
 }
 
 .sectionDarkLeftImg {
-    width: 80%;
+    max-width: 80%;
     border-radius: 15px;
     /* border-style: solid;
     border-color: #46483c4b;
@@ -65,7 +69,7 @@ div.carousel-inner {
 }
 
 .sectionDark div.row div.col-sm-9.col-md-6 div.row div.col-sm-3.col-md-3 {
-    text-align: left;
+    text-align: center;
 }
 
 .sectionDarkInlineImg {
@@ -83,9 +87,42 @@ button.learnMoreBtn {
     margin: auto;
 }
 
+.vertical-center {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.sectionDarkPText {
+    text-align: left;
+    line-height: 2rem;
+}
+
 @media (max-width: 992px) {
     .carousel-caption {
         top: 20%;
+    }
+}
+
+@media (max-width: 724px) {
+    div.sectionDark div.row div.col-sm-9.col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    div.sectionDark div.row div.col-sm-9.col-md-6 div.row div.col-md-9 {
+        width: 100%;
+    }
+
+    .sectionDarkLeftImg {
+        width: 0%;
+        display: none;
+    }
+
+    .sectionDarkInlineImg {
+        width: 0%;
+        display: none;
     }
 }
 
@@ -103,7 +140,7 @@ button.learnMoreBtn {
 }
 
 @media (max-width: 576px) {
-    div.sectionDark div.row div.col-sm-9.col-md-6 {
+    /* div.sectionDark div.row div.col-sm-9.col-md-6 {
         flex: 0 0 auto;
         width: 100%;
     }
@@ -116,7 +153,7 @@ button.learnMoreBtn {
     .sectionDarkInlineImg {
         width: 0%;
         display: none;
-    }
+    } */
 }
 
 @media (min-width: 0px) {
@@ -130,6 +167,15 @@ button.learnMoreBtn {
         font-size: calc(1.15rem + 2.1vw)
     }
 
+    .sectionDarkLeftImg {
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+
+    .sectionDarkInlineImg {
+        max-width: 20rem;
+        max-height: 20rem;
+    }
     /* div.sectionDark div.row div.col-sm-3.col-md-3 {
         flex: 0 0 auto;
         width: 25%
@@ -157,11 +203,26 @@ button.learnMoreBtn {
 }
 
 @media (min-width: 768px) {
+    /* .sectionDarkLeftImg {
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+
+    .sectionDarkInlineImg {
+        max-width: 20rem;
+        max-height: 20rem;
+    } */
 }
 
 @media (min-width: 992px) {
     .sectionDarkLeftImg {
-        width: 40%;
+        max-width: 25rem;
+        max-height: 25rem;
+    }
+
+    .sectionDarkInlineImg {
+        max-width: 25rem;
+        max-height: 25rem;
     }
 }
 
