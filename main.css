@@ -22,6 +22,7 @@ div.container-fluid.py-5 p.text-responsive {
 .row {
     padding: 0px;
 }
+
 .sectionLight {
     background-color: #eceeef;
     padding: 2em;
@@ -46,6 +47,42 @@ div.carousel-inner {
     color: #eceeef;
 }
 
+.sectionDark {
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+.sectionDark div.row div.col-sm-3.col-md-3 {
+    text-align: right;
+}
+
+.sectionDarkLeftImg {
+    width: 80%;
+    border-radius: 15px;
+    /* border-style: solid;
+    border-color: #46483c4b;
+    border-width: 2px; */
+}
+
+.sectionDark div.row div.col-sm-9.col-md-6 div.row div.col-sm-3.col-md-3 {
+    text-align: left;
+}
+
+.sectionDarkInlineImg {
+    border-radius: 15px;
+}
+
+.learnMoreWrapper {
+    margin-top: 20px;
+}
+
+button.learnMoreBtn {
+    background-color: #46483c;
+    color: #fff;
+    display: block;
+    margin: auto;
+}
+
 @media (max-width: 992px) {
     .carousel-caption {
         top: 20%;
@@ -65,7 +102,22 @@ div.carousel-inner {
     }
 }
 
+@media (max-width: 576px) {
+    div.sectionDark div.row div.col-sm-9.col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
 
+    .sectionDarkLeftImg {
+        width: 0%;
+        display: none;
+    }
+
+    .sectionDarkInlineImg {
+        width: 0%;
+        display: none;
+    }
+}
 
 @media (min-width: 0px) {
     .text-responsive {
@@ -77,6 +129,11 @@ div.carousel-inner {
     div.sectionLight div.row div.col-sm-12 div.container-fluid.py-5 h1 {
         font-size: calc(1.15rem + 2.1vw)
     }
+
+    /* div.sectionDark div.row div.col-sm-3.col-md-3 {
+        flex: 0 0 auto;
+        width: 25%
+    } */
 }
 
 @media (min-width: 522px) {
@@ -96,6 +153,15 @@ div.carousel-inner {
 @media (min-width: 595px) {
     div.sectionLight div.row div.col-sm-12 div.container-fluid.py-5 h1 {
         font-size: calc(1.45rem + 2.1vw)
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    .sectionDarkLeftImg {
+        width: 40%;
     }
 }
 
