@@ -50,7 +50,7 @@
                 </div>
             </div>
         </nav>
-        <div class="sectionLight">
+        <div class="sectionLight noPaddingTop">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="container-fluid py-5">
@@ -64,7 +64,7 @@
                 <div class="col"></div>
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner defaultImgCfg">
                             <div class="carousel-item active">
                                 <img src="assets/spyfamilyvol1covercut-2.png" class="d-block w-100" alt="First slide">
                             </div>
@@ -98,7 +98,7 @@
         <div class="sectionDark">
             <div class="row">
                 <div class="col-sm-3 col-md-3">
-                    <img class="sectionDarkLeftImg" src="assets/spyfamilymission1coveryor.png">
+                    <img class="sectionDarkLeftImg defaultImgCfg" src="assets/spyfamilymission1coveryor.png">
                 </div>
                 <div class="col-sm-9 col-md-6">
                     <div class="row">
@@ -125,7 +125,7 @@
                                 est laborum.</p>
                         </div>
                         <div class="col-sm-3 col-md-3">
-                            <img class="img-fluid sectionDarkInlineImg" src="assets/spyfamilymission1coverloid.png">
+                            <img class="img-fluid sectionDarkInlineImg defaultImgCfg" src="assets/spyfamilymission1coverloid.png">
                         </div>
                     </div>
                 </div>
@@ -134,36 +134,92 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="learnMoreWrapper">
-                        <button type="button" class="btn btn-lg learnMoreBtn" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-lg defaultBtnCfg center" data-bs-toggle="modal"
                             data-bs-target="#learnMoreModal">Learn More</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Learn More Modal -->
-        <div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="contentLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
+        <div class="sectionLight">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid center defaultImgCfg" src="assets/spyfamilyvol5snippet.png">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <img class="img-fluid" src="assets/spyfamilylogo.png">
+                                    <button type="button" class="btn btn-lg defaultBtnCfg center btnMargin whosThisBtn">Who is this?</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid center defaultImgCfg" src="assets/spyfamilyvol6snippet.png">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-lg defaultBtnCfg center btnMargin whosThisBtn">Who is this?</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid center defaultImgCfg" src="assets/spyfamilyvol7snippet.png">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-lg defaultBtnCfg center btnMargin whosThisBtn">Who's this bratty kid?</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Learn More Modal -->
+    <div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contentLabel">Learn More About SPYxFAMILY</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img class="img-fluid" src="assets/spyfamilylogodark.png">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="modalFormWrapper">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="formName" class="form-label">What's your name?</label>
+                                            <input type="text" class="form-control" id="formName"
+                                                aria-describedby="nameHelp" placeholder="Name">
+                                            <div id="nameHelp" class="form-text">We'll never share your secret
+                                                identity with anyone else. ;)
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formEmail" class="form-label">Where should we send your
+                                                intel?</label>
+                                            <input type="text" class="form-control" id="formEmail" placeholder="Email">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary defaultBtnCfg">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary defaultBtnCfg" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     </div>
 

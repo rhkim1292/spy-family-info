@@ -2,12 +2,25 @@ button span.navbar-toggler-icon {
     color: #fff;
 }
 
-p {
-    
-}
-
 .container-fluid {
     padding: 0;
+}
+
+.modal-content {
+    --bs-modal-bg: #eceeef;
+}
+
+h5.modal-title {
+    margin: auto;
+    margin-right: 68.125px;
+}
+div.modal-header button.btn-close {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.modalFormWrapper {
+    padding: 2rem;
 }
 
 div.container-fluid nav.navbar.navbar-dark.navbar-expand-lg {
@@ -30,6 +43,9 @@ div.container-fluid.py-5 p.text-responsive {
 .sectionLight {
     background-color: #eceeef;
     padding: 2em;
+}
+
+.noPaddingTop {
     padding-top: 0px;
 }
 
@@ -37,7 +53,7 @@ div.sectionLight div.row div.col-sm-12 {
     margin: auto;
 }
 
-div.carousel-inner {
+.defaultImgCfg {
     border-radius: 15px;
 }
 
@@ -62,7 +78,6 @@ div.carousel-inner {
 
 .sectionDarkLeftImg {
     max-width: 80%;
-    border-radius: 15px;
     /* border-style: solid;
     border-color: #46483c4b;
     border-width: 2px; */
@@ -72,19 +87,13 @@ div.carousel-inner {
     text-align: center;
 }
 
-.sectionDarkInlineImg {
-    border-radius: 15px;
-}
-
 .learnMoreWrapper {
     margin-top: 20px;
 }
 
-button.learnMoreBtn {
+button.defaultBtnCfg {
     background-color: #46483c;
-    color: #fff;
-    display: block;
-    margin: auto;
+    color: #eceeef;
 }
 
 .vertical-center {
@@ -97,6 +106,20 @@ button.learnMoreBtn {
 .sectionDarkPText {
     text-align: left;
     line-height: 2rem;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+.btnMargin {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.whosThisBtn {
+    width: 315px;
 }
 
 @media (max-width: 992px) {
