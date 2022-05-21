@@ -2,18 +2,49 @@ button span.navbar-toggler-icon {
     color: #fff;
 }
 
-.container-fluid {
+.remove-padding {
     padding: 0;
 }
 
-.modal-content {
+.css-box-shadow {
+	/*start ------------*/
+	width: [object Object]px;
+	height: [object Object]px;
+	background: #F8F8F8;
+	border: solid #BDBDBD 0;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Text alignment for body */
+body {
+    text-align: center;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.modal-dialog {
+    display: inline-block;
+    vertical-align: middle;
+    /* --bs-modal-margin: auto; */
+}
+
+.modal .modal-content {
     --bs-modal-bg: #eceeef;
+    padding: 2rem;
 }
 
 h5.modal-title {
     margin: auto;
-    margin-right: 68.125px;
+    margin-right: 45.125px;
 }
+
 div.modal-header button.btn-close {
     margin-left: 0px;
     padding-left: 0px;
@@ -21,6 +52,21 @@ div.modal-header button.btn-close {
 
 .modalFormWrapper {
     padding: 2rem;
+    text-align: left;
+}
+
+.responsive-iframe {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 560px;
+    height: 315px;
+}
+
+.yuriHeaderText {
+    margin-top: 1rem;
 }
 
 div.container-fluid nav.navbar.navbar-dark.navbar-expand-lg {
@@ -122,6 +168,36 @@ button.defaultBtnCfg {
     width: 315px;
 }
 
+.btn-primary {
+    --bs-btn-color: #eceeef;
+    --bs-btn-bg: #636556;
+    --bs-btn-border-color: #636556;
+    --bs-btn-hover-color: #eceeef;
+    --bs-btn-hover-bg: #636556;
+    --bs-btn-hover-border-color: #636556;
+    --bs-btn-active-color: #eceeef;
+    --bs-btn-active-bg: #636556;
+    --bs-btn-active-border-color: #767967;
+    --bs-btn-disabled-color: #eceeef;
+    --bs-btn-disabled-bg: #636556;
+    --bs-btn-disabled-border-color: #636556;
+}
+
+.btn:focus,.btn:active {
+    outline: 0 !important;
+    box-shadow: none !important;
+ }
+ 
+div.fionaImgCols {
+    padding: 0px;
+    vertical-align: middle;
+}
+
+div.fionaImgCols img {
+    margin: 1rem;
+    max-width: 315px;
+}
+
 @media (max-width: 992px) {
     .carousel-caption {
         top: 20%;
@@ -162,23 +238,6 @@ button.defaultBtnCfg {
     }
 }
 
-@media (max-width: 576px) {
-    /* div.sectionDark div.row div.col-sm-9.col-md-6 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-
-    .sectionDarkLeftImg {
-        width: 0%;
-        display: none;
-    }
-
-    .sectionDarkInlineImg {
-        width: 0%;
-        display: none;
-    } */
-}
-
 @media (min-width: 0px) {
     .text-responsive {
         font-size: 1.12rem;
@@ -199,10 +258,24 @@ button.defaultBtnCfg {
         max-width: 20rem;
         max-height: 20rem;
     }
-    /* div.sectionDark div.row div.col-sm-3.col-md-3 {
-        flex: 0 0 auto;
-        width: 25%
-    } */
+
+    .modal {
+        --bs-modal-margin: 1.75rem;
+        --bs-modal-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .modal-dialog {
+        max-width: var(--bs-modal-width);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .modal-sm {
+        --bs-modal-width: 300px;
+    }
+    .mysteryGirlModalWidth {
+        --bs-modal-width: 439px;
+    }
 }
 
 @media (min-width: 522px) {
@@ -225,18 +298,6 @@ button.defaultBtnCfg {
     }
 }
 
-@media (min-width: 768px) {
-    /* .sectionDarkLeftImg {
-        max-width: 20rem;
-        max-height: 20rem;
-    }
-
-    .sectionDarkInlineImg {
-        max-width: 20rem;
-        max-height: 20rem;
-    } */
-}
-
 @media (min-width: 992px) {
     .sectionDarkLeftImg {
         max-width: 25rem;
@@ -246,6 +307,15 @@ button.defaultBtnCfg {
     .sectionDarkInlineImg {
         max-width: 25rem;
         max-height: 25rem;
+    }
+
+    .mysteryGirlModalWidth {
+        --bs-modal-width: 800px;
+    }
+
+    div.fionaImgCols img.fionaRightImg {
+        position: relative;
+        top: 9%;
     }
 }
 
