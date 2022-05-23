@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/43520e0263.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 
@@ -183,8 +185,10 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <button type="button"
-                                        class="btn btn-primary btn-lg defaultBtnCfg center btnMargin whosThisBtn css-box-shadow">INTEL
-                                        3</button>
+                                        class="btn btn-primary btn-lg defaultBtnCfg center btnMargin whosThisBtn video-btn css-box-shadow"
+                                        data-bs-toggle="modal" data-src="https://www.youtube.com/embed/hIK84PLJJvY"
+                                        data-bs-target="#lilBratModal">
+                                        INTEL 3</button>
                                 </div>
                             </div>
                         </div>
@@ -194,12 +198,35 @@
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer bg-inverse" style="background-color: #46483c;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 footerLogoCol">
+                    <img class="footerImg" src="assets/spyfamilylogo.png">
+                </div>
+                <div class="col-sm-6 footerFaviCol">
+                    <a href="https://facebook.com" target="blank">
+                        <i class="fa-brands fa-facebook-square fa-3x vertical-center"></i>
+                    </a>
+                    <a href="https://google.com" target="blank">
+                        <i class="fa-brands fa-google-plus-square fa-3x vertical-center"></i>
+                    </a>
+                    <a href="https://instagram.com" target="blank">
+                        <i class="fa-brands fa-instagram fa-3x vertical-center"></i>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
     <!-- Learn More Modal -->
     <div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog learnMoreModalWidth">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="contentLabel">Learn More About SPYxFAMILY</h5>
+                    <h5 class="modal-title learnMoreModalTitle" id="contentLabel">Learn More About SPYxFAMILY</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -243,29 +270,23 @@
     <!-- Handsome Guy Modal -->
     <div class="modal fade" id="handsomeGuyModal" tabindex="-1" role="dialog" aria-labelledby="handsomeGuyLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modalWidth" role="document">
             <div class="modal-content">
-                <div class="modal-body remove-padding handsomeVidContainer">
-                    <iframe class="responsive-iframe" src="" id="handsomeVideo" allowscriptaccess="always"
+                <div class="modal-body remove-padding">
+                    <iframe class="responsive-iframe defaultImgCfg css-box-shadow" src="" id="handsomeVideo" allowscriptaccess="always"
                         allow="autoplay"></iframe>
                     <h3 class="yuriHeaderText">INTEL 1: THE BROTHER</h3>
                     <p>This handsome man is Yuri Briar. He is Yor Briar's younger brother.
                         He works at the SSS (State Security Service). There are rumors going around that he has a
                         sister-complex..</p>
                 </div>
-                <!-- <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/LZRH0hN3xp4"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div> -->
             </div>
         </div>
     </div>
 
     <!-- Mysterious Girl Modal -->
     <div class="modal fade" id="mysteryGirlModal" tabindex="-1" aria-labelledby="mysteryGirlLabel" aria-hidden="true">
-        <div class="modal-dialog mysteryGirlModalWidth">
+        <div class="modal-dialog modalWidth">
             <div class="modal-content">
                 <div class="modal-body remove-padding">
                     <div class="container-fluid remove-padding">
@@ -285,6 +306,24 @@
                         <p>This woman is Fiona Frost. She acts under the codename <b>"Nightfall"</b>.<br>
                             She works undercover as Loid Forger's assistant.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Little Brat Modal -->
+    <div class="modal fade" id="lilBratModal" tabindex="-1" role="dialog" aria-labelledby="lilBratLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modalWidth" role="document">
+            <div class="modal-content">
+                <div class="modal-body remove-padding">
+                    <iframe class="responsive-iframe defaultImgCfg css-box-shadow" src="" id="bratVideo" allowscriptaccess="always"
+                        allow="autoplay"></iframe>
+                    <h3 class="yuriHeaderText">INTEL 3: THE LITTLE BRAT</h3>
+                    <p>This little brat is the second son of Donovan Desmond. He attends Eden Academy as
+                        part of Cecile Hall, Group 3. He's been seen bullying Anya Forger, but people are suspecting 
+                        he actually has feelings for her.
+                    </p>
                 </div>
             </div>
         </div>
